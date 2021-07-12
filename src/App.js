@@ -1,23 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import {Carousel} from '3d-react-carousal';
+
+import gdanskBiala from './pictures/gdansk_biala.jpg';
+import legendaBiala from './pictures/legenda_biala.jpg';
+import legendaCzarna from './pictures/legenda_czarna.jpg';
+import malborkBiala from './pictures/malbork_biala.jpg';
+import malborkCzarna from './pictures/malbork_czarna.jpg';
+import sukienniceBiala from './pictures/sukiennice_biala.jpg';
+import sukienniceSzara from './pictures/sukiennice_szara.jpg';
+import logov11 from './pictures/logo_vintee_v11-1.jpg';
+
+
+const slides = [
+  <img src={gdanskBiala} alt="gdansk_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}} />,
+  <img src={legendaBiala} alt="legenda_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+  <img src={legendaCzarna} alt="legenda_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+  <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+  <img src={malborkCzarna} alt="malbork_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+  <img src={sukienniceBiala} alt="sukiennice_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+  <img src={sukienniceSzara} alt="sukiennice_szara.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />
+];
+
+const shirts = {
+  malborkShirts: [
+    <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+    <img src={malborkCzarna} alt="malbork_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  /> ,
+    
+  ],
+  krakowShirts: [
+    <img src={legendaBiala} alt="legenda_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+    <img src={legendaCzarna} alt="legenda_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+    <img src={sukienniceBiala} alt="sukiennice_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
+    <img src={sukienniceSzara} alt="sukiennice_szara.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />
+  ],
+  gdanskShirts: [
+    <img src={gdanskBiala} alt="gdansk_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}} />,
+  ]
+}
+
+
 
 function App() {
+
+  const [city, setCity] = useState(slides)
+  
+  function foo(event){
+    const cityLink = event.target.id
+    setCity(shirts[cityLink])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="menu">
+        <img src={logov11} alt="logo" width={400} className="logo" />
+        <ul className="ul">
+          <li className="listItem" id="gdanskShirts" onClick={foo}>Gdańsk</li>
+          <li className="listItem" id="malborkShirts" onClick={foo}>Malbork</li>
+          <li className="listItem" id="krakowShirts" onClick={foo}>Kraków</li>
+        </ul>
+      </div>
+      
+      <div className="carousel" style={{height: "100%"}}>
+        {console.log('city', city)}
+        <Carousel slides={city} autoplay={false} />
+      </div>
     </div>
   );
 }

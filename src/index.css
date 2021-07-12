@@ -1,13 +1,17 @@
-body {
+/*body {
   background: url('./pictures/background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} 
+} */
+
+body {
+  background-color: white;
+}
 
 .fa-arrow-right {
-  border: solid black;
+  border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -16,7 +20,7 @@ body {
 }
 
 .fa-arrow-left {
-  border: solid black;
+  border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -38,3 +42,39 @@ body {
   border-left: none !important;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 400px auto;
+}
+
+.ul {
+  color: grey; 
+  list-style: none;
+  font-size: 40px;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 70px;
+}
+
+.listItem {
+  margin-bottom: 15px;
+}
+
+.carousel {
+  margin-top: 30px;
+margin-left: 5%;
+ margin-right: 15%;
+
+}
+
+.logo {
+  width: 95%;
+}
+
+.menu {
+  background-color: white;
+}
+
+.picture {
+  
+}

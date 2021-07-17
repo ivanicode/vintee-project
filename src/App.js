@@ -12,29 +12,80 @@ import logov11 from './pictures/logo_vintee_v11-1.jpg';
 
 
 const slides = [
-  <img src={gdanskBiala} alt="gdansk_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}} />,
-  <img src={legendaBiala} alt="legenda_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-  <img src={legendaCzarna} alt="legenda_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-  <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-  <img src={malborkCzarna} alt="malbork_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-  <img src={sukienniceBiala} alt="sukiennice_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-  <img src={sukienniceSzara} alt="sukiennice_szara.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />
+  <figure>
+      <img src={gdanskBiala} alt="gdansk_biala.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2.<br />Dostępne rozmiary: S, M, L, XL, XXL.</figcaption>
+    </figure>,
+  <figure>
+  <img src={legendaBiala} alt="legenda_biala.jpg" className="picture" />
+  <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2.<br />Dostępne rozmiary: S, M, L, XL, XXL.</figcaption>
+</figure>,
+<figure>
+  <img src={legendaCzarna} alt="legenda_czarna.jpg" className="picture" />
+  <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2.<br />Dostępne rozmiary: 3/4, 5/6, 7/8, 9/11, 12/14, XS, S, M, L, XL, XXL.</figcaption>
+</figure>,
+<figure>
+  <img src={sukienniceBiala} alt="sukiennice_biala.jpg" className="picture" />
+  <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2<br />Dostępne rozmiary: S, M, L, XL, XXL.</figcaption>
+</figure>,
+<figure>
+  <img src={sukienniceSzara} alt="sukiennice_szara.jpg" className="picture" />
+  <figcaption className="description">Koszulka bawełniana B&C o gramaturze 180 g/cm2<br />Dostępne rozmiary: 12/14, XS, S, M, L, XL, XXL.</figcaption>
+</figure>,
+  <figure>
+  <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" />
+  <figcaption className="description">Koszulka bawełniana Fruit of the Loom o gramaturze 150 g/cm2.<br />Koszulka dla dzieci JHK o gramaturze 150 g/cm2.</figcaption>
+</figure>,
+<figure>
+  <img src={malborkCzarna} alt="malbork_czarna.jpg" className="picture" />
+  <figcaption className="description malborkCzarna">Koszulka bawełniana Fruit of the Loom o gramaturze 150 g/cm2.<br />
+    Koszulka dla dzieci JHK o gramaturze 150 g/cm2.<br />
+    Dostępne rozmiary: 3/4, 5/6, 7/8, 9/11, 12/14, S, M, L, XL, XXL.
+  </figcaption>
+</figure>
 ];
 
 const shirts = {
   malborkShirts: [
-    <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-    <img src={malborkCzarna} alt="malbork_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  /> ,
-    
+    <figure>
+      <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana Fruit of the Loom o gramaturze 150 g/cm2.<br />Koszulka dla dzieci JHK o gramaturze 150 g/cm2.</figcaption>
+    </figure>,
+    <figure>
+      <img src={malborkCzarna} alt="malbork_czarna.jpg" className="picture" />
+      <figcaption className="description malborkCzarna">Koszulka bawełniana Fruit of the Loom o gramaturze 150 g/cm2.<br />
+        Koszulka dla dzieci JHK o gramaturze 150 g/cm2.<br />
+        Dostępne rozmiary: 3/4, 5/6, 7/8, 9/11, 12/14, S, M, L, XL, XXL.
+      </figcaption>
+    </figure>,
+    <figure>
+    <img src={malborkBiala} alt="malbork_biala.jpg" className="picture" />
+    <figcaption className="description">Koszulka bawełniana Fruit of the Loom o gramaturze 150 g/cm2.<br />Koszulka dla dzieci JHK o gramaturze 150 g/cm2.</figcaption>
+  </figure>
   ],
   krakowShirts: [
-    <img src={legendaBiala} alt="legenda_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-    <img src={legendaCzarna} alt="legenda_czarna.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-    <img src={sukienniceBiala} alt="sukiennice_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />,
-    <img src={sukienniceSzara} alt="sukiennice_szara.jpg" className="picture" width={750} height={750} style={{height: "100%"}}  />
+    <figure>
+      <img src={legendaBiala} alt="legenda_biala.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2.<br />Dostępne rozmiary: S, M, L, XL, XXL.</figcaption>
+    </figure>,
+    <figure>
+      <img src={legendaCzarna} alt="legenda_czarna.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2.<br />Dostępne rozmiary: 3/4, 5/6, 7/8, 9/11, 12/14, XS, S, M, L, XL, XXL.</figcaption>
+    </figure>,
+    <figure>
+      <img src={sukienniceBiala} alt="sukiennice_biala.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2<br />Dostępne rozmiary: S, M, L, XL, XXL.</figcaption>
+    </figure>,
+    <figure>
+      <img src={sukienniceSzara} alt="sukiennice_szara.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana B&C o gramaturze 180 g/cm2<br />Dostępne rozmiary: 12/14, XS, S, M, L, XL, XXL.</figcaption>
+    </figure>
   ],
   gdanskShirts: [
-    <img src={gdanskBiala} alt="gdansk_biala.jpg" className="picture" width={750} height={750} style={{height: "100%"}} />,
+    <figure>
+      <img src={gdanskBiala} alt="gdansk_biala.jpg" className="picture" />
+      <figcaption className="description">Koszulka bawełniana JHK o gramaturze 150 g/cm2.<br />Dostępne rozmiary: S, M, L, XL, XXL.</figcaption>
+    </figure>
   ]
 }
 
@@ -60,9 +111,11 @@ function App() {
         </ul>
       </div>
       
-      <div className="carousel" style={{height: "100%"}}>
+      <div className="carousel-viewport">
+      <div className="carousel">
         {console.log('city', city)}
         <Carousel slides={city} autoplay={false} />
+      </div>
       </div>
     </div>
   );

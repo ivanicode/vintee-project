@@ -117,7 +117,11 @@ function App() {
         <Carousel slides={city} autoplay={false} />
       </div>
       </div>
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+</style>
     </div>
+    
   );
 }
 

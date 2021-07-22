@@ -8,7 +8,7 @@ import malborkBiala from './pictures/malbork_biala.jpg';
 import malborkCzarna from './pictures/malbork_czarna.jpg';
 import sukienniceBiala from './pictures/sukiennice_biala.jpg';
 import sukienniceSzara from './pictures/sukiennice_szara.jpg';
-import logov11 from './pictures/logo_vintee_v11-1.jpg';
+import logo from './pictures/logo.png';
 
 
 const slides = [
@@ -103,7 +103,7 @@ function App() {
   return (
     <div className="container">
       <div className="menu">
-        <img src={logov11} alt="logo" width={400} className="logo" />
+        <img src={logo} alt="logo" width={400} className="logo" />
         <ul className="ul">
           <li className="listItem" id="gdanskShirts" onClick={foo}>Gdańsk</li>
           <li className="listItem" id="malborkShirts" onClick={foo}>Malbork</li>
@@ -113,7 +113,6 @@ function App() {
       
       <div className="carousel-viewport">
       <div className="carousel">
-        {console.log('city', city)}
         <Carousel slides={city} autoplay={false} />
       </div>
       </div>

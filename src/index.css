@@ -1,13 +1,9 @@
-/*body {
-  background: url('./pictures/background.jpg') no-repeat center center fixed; 
+body {
+  background: url('./pictures/tlo.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
-
-body {
-  background-color: white;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -51,7 +47,7 @@ body {
 }
 
 .ul {
-  color: grey; 
+  color: #c1cfe6; 
   list-style: none;
   font-size: 40px;
   text-align: center;
@@ -65,7 +61,8 @@ body {
 
 li:hover {
   font-size: 60px;
-  color: #626c7a
+  color: #a3b4cf;
+  cursor: pointer;
 }
 
 .listItem {
@@ -98,7 +95,7 @@ margin-left: 5%;
   font-size: 20px;
   text-align: center;
   display: none;
-  color: #4d5b63;
+  color: #c1cfe6;
 }
 
 .active .description {
@@ -118,11 +115,7 @@ figure {
   margin: auto;
 }
 
-
-
 figcaption {
-  background-color: white;
-  color: black;
   padding: 3px;
   text-align: center;
 }
@@ -141,7 +134,7 @@ figcaption {
 
   .menu {
     display: grid;
-    grid-template-columns: 180px auto;
+    grid-template-columns: 120px auto;
   }
 
   .logo {
@@ -150,21 +143,22 @@ figcaption {
   }
 
   .ul {
-    color: grey; 
+    color: #8e939c; 
     list-style: none;
     font-size: 20px;
     text-align: center;
     padding-left: 0px;
     padding-top: 0px;
     margin: 0;
-    margin-top: 10px;
-    margin-right: 15px;
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 25px;
   }
   
   .carousel {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 40px;
+    margin-top: 90px;
   }
 
   .react-3d-carousel .slider-container div.slider-right div {
@@ -181,7 +175,7 @@ figcaption {
 
   li:hover {
     font-size: 22px;
-    color: #626c7a
+    color: #a3b4cf
   }
 }
 
@@ -193,12 +187,12 @@ figcaption {
   }
 
   .logo {
-    max-width: 200px;
-    min-width: 150px;
+    width: 140px;
+    margin-left: 30px;
   }
 
   .ul {
-    color: grey; 
+    color: #c1cfe6; 
     list-style: none;
     font-size: 20px;
     text-align: center;
@@ -212,7 +206,7 @@ figcaption {
 
   li:hover {
     font-size: 22px;
-    color: #626c7a
+    color: #a3b4cf
   }
 
   .description {
